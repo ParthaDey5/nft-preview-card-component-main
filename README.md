@@ -36,7 +36,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/ParthaDey5/nft-preview-card-component-main]
-- Live Site URL: [https://your-live-site-url.com](https://your-live-site-url.com)
+- Live Site URL: [https://nft-preview-card-component-main-three-theta.vercel.app]
 
 ---
 
