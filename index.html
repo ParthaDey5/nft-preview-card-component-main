@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { text-align: center; }
+
+    html{
+      width: 100%;
+      max-width: 100%;
+      font-size: 1vw;
+    }
+    .outfit {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.cursor{
+  cursor: url('/images/cursor.png') 8 0, pointer;
+}
+  </style>
+</head>
+<body class="outfit bg-[hsl(217,54%,11%)] flex flex-col items-center justify-start max-w-screen min-h-screen w-full lg:aspect-[1440/900] aspect-[375/667]">
+  
+<main class="nft-card lg:mt-40 mt-65">
+  <div class="nft-card__container bg-[hsl(216,50%,16%)] flex flex-col lg:px-6 px-26 lg:py-10 py-27 lg:w-95 w-[88rem]">
+    
+    <!-- Image block -->
+    <div class="nft-card__image-wrapper relative">
+      <img src="./images/image-equilibrium.jpg" 
+           class="nft-card__image lg:w-84 w-295 aspect-square lg:rounded-[0.5rem] rounded-[2.5rem]" 
+           alt="image-equilibrium">
+      <div id="active-states" 
+           class="nft-card__overlay hidden w-full lg:rounded-[0.5rem] rounded-[2.5rem] absolute inset-0 bg-[hsl(178,100%,50%)]/50 flex items-center justify-center cursor">
+        <img class="nft-card__overlay-icon lg:w-15 w-55" src="./images/icon-view.svg" alt="icon-view">
+      </div>
+    </div>
+
+    <!-- Title -->
+    <h1 onclick="document.getElementById('active-states').classList.toggle('hidden')" 
+        class="nft-card__title w-full lg:mt-6 mt-25 text-left text-white lg:text-[1.55rem] text-[6.05rem] cursor hover:text-[hsl(178,100%,50%)] transition-transform ease duration-800">
+      Equilibrium #3429
+    </h1>
+
+    <!-- Description -->
+    <p class="nft-card__description lg:mt-3 mt-10 lg:w-88 w-300 text-left text-[hsl(215,51%,70%)] lg:text-[1.3rem] text-[4.3rem] lg:leading-[1.9rem]">
+      Our Equilibrium collection promotes balance and calm.
+    </p>
+
+    <!-- Meta info -->
+    <div class="nft-card__meta lg:mt-6 mt-17 w-full flex items-center justify-between lg:text-[1.1rem] text-[4rem] lg:pr-1 pr-4">
+      <span class="nft-card__price text-[hsl(178,100%,50%)] flex items-center lg:gap-2 gap-6">
+        <img src="./images/icon-ethereum.svg" alt="icon-ethereum" class="lg:w-[0.8rem] w-[3.5rem]"> 0.041 ETH
+      </span>
+      <span class="nft-card__time text-[hsl(215,51%,70%)] flex items-center lg:gap-2 gap-6">
+        <img src="./images/icon-clock.svg" alt="icon-clock" class="lg:w-[1.15rem] w-[5rem]"> 3 days left
+      </span>
+    </div>
+
+    <!-- Author -->
+    <div class="nft-card__author lg:mt-11 mt-33 w-full flex items-center justify-start lg:text-[1.1rem] text-[4rem]">
+      <img src="./images/image-avatar.png" alt="avatar" class="nft-card__avatar outline-1 outline-white rounded-full lg:w-[2.1rem] w-[9rem]"> 
+      <span class="nft-card__creator lg:ml-5 ml-17 flex text-[hsl(215,51%,70%)]">
+        Creation of <p class="nft-card__creator-name text-white lg:ml-2 ml-6">Jules Wyvern</p>
+      </span>
+    </div>
+  </div>
+
+</main>
+  
+<footer class="lg:mt-20 mt-25 lg:text-[1.1rem] text-[3.4rem] text-white tracking-wider">
+  <div class="attribution">
+    Challenge by <a class="underline cursor" href="https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U" target="_blank">Frontend Mentor</a>. 
+    Coded by <a class="underline cursor" href="https://www.frontendmentor.io/profile/ParthaDey5">Partha Dey</a>.
+  </div>
+</footer>
+</body>
+</html>
