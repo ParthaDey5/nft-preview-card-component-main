@@ -35,19 +35,19 @@
   <div class="nft-card__container bg-[hsl(216,50%,16%)] flex flex-col lg:px-6 px-26 lg:py-10 py-27 lg:w-95 w-[88rem]">
     
     <!-- Image block -->
-    <div class="nft-card__image-wrapper relative">
+    <div class="nft-card__image-wrapper relative ">
       <img src="./images/image-equilibrium.jpg" 
            class="nft-card__image lg:w-84 w-295 aspect-square lg:rounded-[0.5rem] rounded-[2.5rem]" 
            alt="image-equilibrium">
       <div id="active-states" 
-           class="nft-card__overlay hidden w-full lg:rounded-[0.5rem] rounded-[2.5rem] absolute inset-0 bg-[hsl(178,100%,50%)]/50 flex items-center justify-center cursor">
+           class="nft-card__overlay opacity-0 hover:opacity-100 w-full lg:rounded-[0.5rem] rounded-[2.5rem] absolute inset-0 bg-[hsl(178,100%,50%)]/50 flex items-center justify-center cursor">
         <img class="nft-card__overlay-icon lg:w-15 w-55" src="./images/icon-view.svg" alt="icon-view">
       </div>
     </div>
 
     <!-- Title -->
-    <h1 onclick="document.getElementById('active-states').classList.toggle('hidden')" 
-        class="nft-card__title w-full lg:mt-6 mt-25 text-left text-white lg:text-[1.55rem] text-[6.05rem] cursor hover:text-[hsl(178,100%,50%)] transition-transform ease duration-800">
+    <h1 
+        class="nft-card__title w-fit lg:mt-6 mt-25 text-left text-white lg:text-[1.55rem] text-[6.05rem] cursor hover:text-[hsl(178,100%,50%)] transition-transform ease duration-800">
       Equilibrium #3429
     </h1>
 
